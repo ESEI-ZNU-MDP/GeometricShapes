@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/sideEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter side"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter height"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/sideEditText"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightEditText"
+        android:layout_marginTop="16dp"
+        android:text="Calculate"/>
+
+    <ImageView
+        android:id="@+id/triangleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/triangle"
+        android:contentDescription="Triangle Image"/>
+
+    <TextView
+        android:id="@+id/triangleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap-content"
+        android:layout_below="@id/triangleImageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Triangle"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/rightTriangleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/triangleImageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/triangleImageView"
+        android:src="@drawable/right_triangle"
+        android:contentDescription="Right Triangle Image"/>
+
+    <TextView
+        android:id="@+id/rightTriangleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap-content"
+        android:layout_below="@id/rightTriangleImageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Right Triangle"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/squareImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rightTriangleImageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/rightTriangleImageView"
+        android:src="@drawable/square"
+        android:contentDescription="Square Image"/>
+
+    <TextView
+        android:id="@+id/squareTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap-content"
+        android:layout_below="@id/squareImageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Square"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/rectangleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/squareImageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/squareImageView"
+        android:src="@drawable/rectangle"
+        android:contentDescription="Rectangle Image"/>
+
+    <TextView
+        android:id="@+id/rectangleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap-content"
+        android:layout_below="@id/rectangleImageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Rectangle"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
